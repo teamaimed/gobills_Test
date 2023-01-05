@@ -27,7 +27,7 @@ const Hero = () => {
             Accounting & Billing faster & easier.
                 </h1>
                 <p className="gr-text-8 mb-8">
-             Gobills is one stop accounting software to manage your estimates, invoices, inventory, and much more.
+             YOYO is one stop accounting software to manage your estimates, invoices, inventory, and much more.
                 </p>
                 
                 <a
