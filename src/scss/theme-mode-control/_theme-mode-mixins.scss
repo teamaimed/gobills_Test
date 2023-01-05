@@ -1,0 +1,48 @@
+@mixin dark-theme-mode {
+  --bg: #0e1019;
+  --bg-2: rgba(255, 255, 255, 0.01);
+  --bg-3: #0e1019;
+  --bg-4: #0e1019;
+  --bg-5: #0e1019;
+  --bg-6: #0e1019;
+  --bg-7: #13151c;
+  --bg-8: #0e1019;
+  --color-headings: #fff;
+  --color-headings-opacity: rgba(255, 255, 255, 0.4);
+  --color-texts-opacity: rgba(255, 255, 255, 0.7);
+  --color-texts: #fff;
+  --btn-border: rgba(255, 255, 255, 0.3);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --force-dark: #171a23;
+}
+@mixin light-theme-mode {
+  --bg: #ffffff;
+  --bg-2: #ffffff;
+  --bg-3: #ffffff;
+  --bg-4: #ffffff;
+  --bg-5: #ffffff;
+  --bg-6: #ffffff;
+  --bg-7: #ffffff;
+  --bg-8: #ffffff;
+  --color-headings: #161c2d;
+  --color-headings-opacity: rgba(22, 28, 45, 0.4);
+  --color-texts-opacity: rgba(22, 28, 45, 0.7);
+  --color-texts: #161c2d;
+  --btn-border: rgba(3, 3, 3, 0.3);
+  --border-color: #ffffff;
+}
+
+@mixin dark-mode {
+  [data-theme="dark"] &,
+  .dark-mode-texts & {
+    @content;
+  }
+}
+@mixin light-mode {
+  [data-theme="dark"] &,
+  .dark-mode-texts & {
+    @content;
+  }
+}
+
+// #ffffff, #ffffff, #ffffff, #ffffff, #ffffff,
